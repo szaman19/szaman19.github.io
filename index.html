@@ -10,26 +10,77 @@
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/css/tether.min.css" media="screen" title="no title" charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
         <style media="screen">
-            body {
-                background-image: url("static_contents/sayagata-400px/sayagata-400px.png");
-            }
-
             .dark-cards {
                 background-color: #336688;
-                border-color: #333;
+                border-color: #336688;
             }
 
             .jumbotron {
-                padding-top: 30vh;
+                padding-top: 20vh;
                 background-color: #333;
                 /*background-color: #FF9900;*/
                 color: white;
                 height: 100vh;
+                margin: 0;
             }
 
-            .page{
-              min-height: 100vh;
+            .page {
+                min-height: 100vh;
+            }
+
+            .page#pattern1 {
+                background-image: url("static_contents/sayagata-400px/sayagata-400px.png");
+            }
+
+            .page#projects {
+                background-color: #336688;
+            }
+
+            .section-title-box {
+                padding-top: 20vh;
+            }
+
+            .white-text {
+                color: white;
+            }
+
+            hr.white {
+                border-color: white;
+            }
+            ul.projects-list {
+                list-style-type: none;
+                display: flex;
+                align-content: flex-start;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+            }
+
+            li.projects-list-item {
+              margin:0 ;
+            }
+            li.projects-list-item>a{
+              display: block;
+              padding-top: 1em;
+              padding-bottom:1em;
+              padding-right: 1em;
+              padding-left: 1em;
+              background-color: #333;
+              border-width: .1em;
+              border-style: solid;
+              border-color: #334;
+              color: white;
+            }
+            li.projects-list-item>a:hover{
+              font-style: normal;
+              text-decoration: none;
+              color: #333;
+              border-width: .1em;
+              border-style: solid;
+              background-color: rgba(0, 0, 0, 0.0);
+              border-color: rgba(0, 0, 0, 1);
             }
 
         </style>
@@ -41,43 +92,59 @@
                     Shehtab Zaman
                 </div>
                 <h2>Physicist. Programmer. Potter.*</h2>
-                <hr style="border-color:white;">
+                <hr class="white">
                 <h6>*Ok I didn't have another thing with P and I like triplets. But I promise I'll learn. Or maybe I'm a wizard.</h6>
             </div>
         </div>
-        <div class="container-fluid page">
-            <div class="row"></div>
-            <div class="row">
-                <div class="card-deck">
-                    <div class="card card-inverse text-xs-center dark-cards">
-                        <div class="card-block">
-                            <h3 class="card-title ">Resume</h3>
-                            <hr style="border-color:white;">
-                            <p class="card-text">Fill in your email and I'll email you a copy of my resume . Feel free to contact me about!
-                            </p>
-                            <form class="form-inline">
-                                <div class="form-group">
-                                    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="Email">
+        <section class="page" id="pattern1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-3 section-title-box">
+                        <div class="display-1">
+                            Projects
+                        </div>
+                        <div class="">
+                            <ul class="projects-list">
+                                <li class="projects-list-item">
+                                    <a href="#" class="" data-toggle="modal" data-target="#myModal">WorkTogether</a>
+                                </li>
+                                <li class="projects-list-item">
+                                  <a href="#" class="" data-toggle="modal" data-target="#myModal">BuzzFood</a>
+                                </li>
+                                <li class="projects-list-item">
+                                  <a href="#" class="" data-toggle="modal" data-target="#myModal">
+                                    BLP Music</a></li>
+                                <li class="projects-list-item">
+                                  <a href="#" class="" data-toggle="modal" data-target="#myModal">Groove Copter
+                                  </a>
+                                  </li>
+                            </ul>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Send</button>
-                            </form>
-
+                            </div>
                         </div>
                     </div>
-                    <div class="card card-inverse text-xs-center dark-cards">
-                        <div class="card-block">
-                            <h3 class="card-title">Contact</h3>
-                            <hr style="border-color:white;">
-                            <p class="card-text">Contact me if you have any questions about any projects I do, or if you want to talk about Batman or Physics or just any general inquiries.
-                            </p>
-
-                            <a href="#" class="btn btn-secondary-outline">Contact Me!</a>
-                        </div>
-                    </div>
+                    <div class=""></div>
                 </div>
             </div>
-        </div>
+        </section>
         <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js" charset="utf-8"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
