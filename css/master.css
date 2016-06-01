@@ -1,0 +1,126 @@
+img,
+    embed,
+    object,
+    video
+    {
+        max-width: 100%;
+    }
+      body{
+        background-color: #DCDBD9;
+        color: #2c2c2c;
+        font: normal 100% Cambria, Georgia, serif;
+        height: 100%;
+      }
+      .hr-gradient{
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+      }
+      #page {
+        width: 90%;
+        margin: 0px auto 36px;
+      }
+      .blog{
+        margin: 0 auto 53px;
+        width: 93.75%;
+        overflow-x: visible;
+        background-color:white;
+
+      }
+      .blog .main{
+        float: left;
+        width: 100%;
+        background-color:white;
+      }
+      #sectionTitle{
+        padding-top: 1.8em;
+        padding-bottom: 1.8em;
+        padding-left: .6em;
+      }
+      h1.blog-title{
+        font-size: 2em;
+        font-style: italic;
+        font-weight: normal;
+        padding-left: 2em;
+      }
+      h1 a{
+        color: #747474;
+        font: bold 0.45833333333em Calibri, Optima, Arial, sans-serif;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+      .blog-date{
+        margin: 0 0 0 -2.6em;
+        display: inline-flex;
+        display: webkit-inline-flex;
+      }
+      .date-month{
+        background-color: #FFD700;
+        color: black;
+
+        width: 4.06em;
+        padding: 1em 1em 1em 2.5em;
+        font: Bold 100% Cambria, Georgia, serif;
+
+      }
+      .date-year{
+        background-color: black;
+        color: white;
+        padding: 1em 1em 0em 1em;
+        font: bold 100% Cambria, Georgia, serif;
+      }
+      .blog-content{
+        padding-top: 1em;
+        padding-left: 2em;
+        padding-right: 1em;
+      }
+      /* Smartphones (portrait and landscape) ----------- */
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        /* Styles */
+        .blog .main{
+          float: left;
+          width: 100%;
+        }
+
+      }
+      nav{
+      /*float: right;*/
+      width: 90%;
+      margin: 0px auto;
+    }
+    .nav-bar{
+      margin: 0 auto;
+      width: 93.75%;
+    }
+
+    ul.nav{
+      list-style-type: none;
+      display: flex;
+      margin-bottom: 0;
+      justify-content: flex-end;
+    }
+
+    li.tabs{
+      padding-top: .7em;
+      padding-bottom: .7em;
+      padding-left: 1.0em;
+      padding-right: 1em;
+      font-style: italic;
+      font-family: serif;
+      font-size: 1em;
+    }
+    li.tabs>a{
+      text-decoration: none;
+      color: #2c2c2c;
+    }
+    li.tabs>a:hover{
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+/*BLOG INDEX STYLES*/
+    ul.post-list{
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+    }
