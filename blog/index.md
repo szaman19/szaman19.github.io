@@ -9,20 +9,24 @@ title: Blog
       <h1 class="blog-title">
         Blog
       </h1>
+      <hr class="hr-gradient">
     </div>
     <div class="main">
       <div class="blog-content">
         <ul class="post-list">
           {% for post in site.posts %}
             <li>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <div class="blog-post">
+                <span class="post-meta">{{ post.date | date: "%b , %Y" }}</span>
 
-              <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
-              <p>
-                {{post.excerpt}}
-              </p>
+                <h2>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                <hr>
+
+                  {{ post.excerpt}}
+                <hr>
+              </div>
             </li>
           {% endfor %}
         </ul>
