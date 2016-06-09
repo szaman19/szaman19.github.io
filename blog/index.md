@@ -17,7 +17,6 @@ title: Blog
           {% for post in site.posts %}
             <li>
               <div class="blog-post">
-                <span class="post-meta">{{ post.date | date: "%b , %Y" }}</span>
 
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -34,7 +33,8 @@ title: Blog
 
       </div>
 
-    </div>
-
-  </div>
+```
 </div>
+```
+
+  </div> </div>
