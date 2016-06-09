@@ -131,8 +131,16 @@ img,
       padding-left: 2em;
     }
 
+    ul.post-list>li:hover{
+      background-color: gray;
+
+    }
+
     ul.post-list>li>div.blog-post>span.post-meta{
       float: right;
+
+      color: gray;
+      font-size: .5em;
 
     }
     ul.post-list>li>div.blog-post>h2{
