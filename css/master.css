@@ -25,12 +25,16 @@ img,
         width: 93.75%;
         overflow-x: visible;
         background-color:white;
+        box-shadow: 0em .5em .4em #333;
 
-      }jek
+
+
+      }
       .blog .main{
         float: left;
         width: 100%;
         background-color:white;
+        box-shadow: 0em .3em .4em #333;
       }
       #sectionTitle{
         padding-top: 1.8em;
@@ -127,7 +131,6 @@ img,
       -moz-transition: background .6s ease-in;
       -o-transition: background .6s ease-in;
       -webkit-transition: background .6s ease-in;
-
       width: 50%;
 
     }
@@ -159,6 +162,10 @@ img,
     /* Smartphones (portrait and landscape) ----------- */
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
       /* Styles */
+      #page {
+        width: 100%;
+        margin: 0px auto 36px;
+      }
       .blog .main{
         float: left;
         width: 100%;
