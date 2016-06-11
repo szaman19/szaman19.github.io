@@ -26,7 +26,7 @@ img,
         overflow-x: visible;
         background-color:white;
 
-      }
+      }jek
       .blog .main{
         float: left;
         width: 100%;
@@ -107,8 +107,8 @@ img,
       color: #2c2c2c;
     }
     li.tabs>a:hover{
-      text-decoration: none;
-      font-size: 1.1em;
+      text-decoration: underline;
+      /*font-size: 1.1em;*/
     }
 /*BLOG INDEX STYLES*/
     ul.post-list{
@@ -123,6 +123,11 @@ img,
     }
 
     ul.post-list>li{
+      transition: background .6s ease-in;
+      -moz-transition: background .6s ease-in;
+      -o-transition: background .6s ease-in;
+      -webkit-transition: background .6s ease-in;
+
       width: 50%;
 
     }
@@ -133,6 +138,7 @@ img,
 
     ul.post-list>li:hover{
       background-color: gray;
+      color: white;
 
     }
 
