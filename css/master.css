@@ -144,6 +144,9 @@ img,
       color: white;
 
     }
+    ul.post-list>li:hover>div.blog-post>h2{
+      color: white;
+    }
 
     ul.post-list>li>div.blog-post>span.post-meta{
       float: right;
@@ -169,6 +172,11 @@ img,
       .blog .main{
         float: left;
         width: 100%;
+      }
+      .blog-content{
+        padding-top: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
       }
       ul.post-list>li{
         width: 100%;

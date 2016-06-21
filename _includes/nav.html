@@ -1,18 +1,33 @@
 <nav>
   <div class="nav-bar">
     <ul class="nav">
-      <li class="tabs">
-        <a href="{{ "/"| prepend:site.baseurl}}">
+      <li class="
+      {% if page.title == 'Home' %}
+        {{"tabs active"}}
+      {% else %}
+        {{"tabs"}}
+      {% endif %}">
+        <a href="{{ "/"| prepend:site.baseurl}}" class="{% if page.title == 'Home' %}{{"no-hover"}}{% endif %}">
           Home
         </a>
       </li>
-      <li class="tabs">
-        <a href="/blog/">
+      <li class="
+      {% if page.title == 'Blog' %}
+        {{"tabs active"}}
+      {% else %}
+        {{"tabs"}}
+      {% endif %}">
+        <a href="/blog/" class="{% if page.title == 'Blog' %}{{"active no-hover"}}{% endif %}">
           Blog
         </a>
       </li>
-      <li class="tabs">
-        <a href="/about/">
+      <li class="
+      {% if page.title == 'About' %}
+        {{"tabs active"}}
+      {% else %}
+        {{"tabs"}}
+      {% endif %}">
+        <a href="/about/" class="{% if page.title == 'About' %}{{"active no-hover"}}{% endif %}">
           About
         </a>
       </li>

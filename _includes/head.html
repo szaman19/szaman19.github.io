@@ -7,6 +7,6 @@
     </title>
     <link rel="stylesheet" href="{% if page.layout == 'post'%}
     {{" /css/post.css" | prepend: site.baseurl}}
-    {% else if page.layout =='default' %}
-    {{"/css/master.css" | prepend:site.baseurl}}{% endif %}">
+    {% else if page.title =='blog' %}
+    {{"/css/styles.css" | prepend:site.baseurl}}{% endif %}">
 </head>
