@@ -1,0 +1,44 @@
+@include media-query($on-mobile){
+  #page{
+    width: 100%;
+    height: 100%;
+  }
+
+  @include nav();
+
+
+}
+
+@include media-query($on-small-device){
+  #page{
+    width: 100%;
+    height: 100%;
+    margin: 0px auto 36px;
+
+    .blog{
+      .main{
+        .blog-content{
+          ul{
+            list-style: none;
+            li{
+              text-decoration: none;
+              .blog-post{
+                h2{
+                  a{
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#page{
+  width: 90%;
+  height: 100%;
+  margin: 0px auto 36px;
+}
