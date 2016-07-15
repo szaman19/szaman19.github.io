@@ -13,9 +13,20 @@
   #page{
     width: 100%;
     height: 100%;
-    margin: 0px auto 36px;
+    margin: 0px 0px;
 
     .blog{
+      width: 100%;
+
+      #sectionTitle{
+
+        color: #333;
+        margin-top: 5px;
+        padding-left: 8em;
+        h1{
+          margin: auto;
+        }
+      }
       .main{
         .blog-content{
           ul{
@@ -23,7 +34,9 @@
             li{
               text-decoration: none;
               .blog-post{
+                padding-left: 1em;
                 h2{
+                  
                   a{
                     text-decoration: none;
                   }
@@ -37,8 +50,8 @@
   }
 }
 
-#page{
-  width: 90%;
-  height: 100%;
-  margin: 0px auto 36px;
-}
+// #page{
+//   width: 90%;
+//   height: 100%;
+//   margin: 0px auto 36px;
+// }
