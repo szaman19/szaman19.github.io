@@ -65,6 +65,7 @@ $link-decoration-disabled: none;
 @mixin nav(){
   nav{
     width: 100%;
+    background-color: white; 
     .nav-bar{
       width: 100%;
       ul{
