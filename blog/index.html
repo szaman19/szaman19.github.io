@@ -24,8 +24,10 @@ title: Blog
 
 
                   {{ post.excerpt}}
+                  <blockquote cite="http://">
+                      <span class="post-meta ">{{ post.date | date: "%b , %Y" }}</span>
+                  </blockquote>
 
-                  <span class="post-meta">{{ post.date | date: "%b , %Y" }}</span>
               </div>
             </li>
             <!-- <hr> -->

@@ -36,20 +36,32 @@
             li{
               text-decoration: none;
               width: 95%;
+              margin-left: auto;
+              margin-right: auto;
               background-color: white;
               padding-bottom: 1.5em;
               padding-top: 1em;
               margin-top: 1em;
               margin-bottom: 1.5em;
-              margin-right: auto;
-              margin-left: auto;
+
               box-shadow: 1px 2px 5px #888888;
               .blog-post{
-                padding-left: 1em;
+                width: inherit;
+
                 h2{
+                  width: 95%;
+                  margin: auto;
+                  padding-bottom: 1em;
                   a{
                     text-decoration: none;
+                    font-family: $blog-font-stack;
                   }
+                }
+                p{
+                  width: 95%;
+                  font-size: $mobile-page-font-height;
+                  margin: auto;
+                  font-family: $blog-font-stack;
                 }
               }
             }
