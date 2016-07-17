@@ -1,10 +1,10 @@
 img,
-    embed,
-    object,
-    video
-    {
+embed,
+object,
+video
+{
         max-width: 100%;
-    }
+}
       body{
         background-color: #DCDBD9;
         color: #2c2c2c;

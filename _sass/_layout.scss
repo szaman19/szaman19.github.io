@@ -10,6 +10,7 @@
 }
 
 @include media-query($on-small-device){
+  @include nav();
   body{
     background-color: #d3d3d3;
   }
