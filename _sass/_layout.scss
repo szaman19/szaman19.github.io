@@ -61,9 +61,38 @@
                   width: 95%;
                   font-size: $mobile-page-font-height;
                   margin: auto;
+                  margin-bottom: .4em;
                   font-family: $blog-font-stack;
                 }
+                blockquote{
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                  margin-right: 1em;
+                  padding-top: .6em;
+                  padding-bottom: .6em;
+                  padding-left: .6em;
+                  padding-right: .6em;
+                  border-color: black;
+                  border-style: groove;
+
+                  border-left-width:  2px;
+                  border-right: 0px;
+                  border-top: 0px;
+                  border-bottom-width:  0px;
+                  float: right;
+                  span{
+                    font-size: 90%;
+
+                  }
+                }
               }
+            }
+          }
+          p {
+            &.rss-subscribe{
+              width: 90%;
+              margin: auto;
+              font-size: 81%;
             }
           }
         }
