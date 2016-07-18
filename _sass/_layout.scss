@@ -56,6 +56,11 @@
                   a{
                     text-decoration: none;
                     font-family: $blog-font-stack;
+
+                    &:visited{
+                      color: #333;
+                      text-decoration: none;
+                    }
                   }
                 }
                 p{

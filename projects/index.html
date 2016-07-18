@@ -13,20 +13,20 @@ title: Project
     <div class="main">
       <div class="blog-content">
         <ul class="post-list">
-          {% for post in site.posts %}
+          <!-- {% for post in site.posts %} -->
             <li>
               <div class="blog-post">
 
 
                 <h2>
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                  <a class="post-link" href="">Project 1</a>
                 </h2>
-                <blockquote cite="http://">
+                <!-- <blockquote cite="http://">
                     <span class="post-meta ">{{ post.date | date: "%b , %Y" }}</span>
-                </blockquote>
+                </blockquote> -->
 
 
-                  {{ post.excerpt}}
+                  <!-- {{ post.excerpt}} -->
                   <!-- <blockquote cite="http://">
                       <span class="post-meta ">{{ post.date | date: "%b , %Y" }}</span>
                   </blockquote> -->
@@ -34,7 +34,7 @@ title: Project
               </div>
             </li>
             <!-- <hr> -->
-          {% endfor %}
+          <!-- {% endfor %} -->
         </ul>
         <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
