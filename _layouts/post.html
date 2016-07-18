@@ -3,25 +3,34 @@ layout: default
 ---
 <div id="page">
     <div class="blog section">
-        <div id="sectionTitle">
+        <!-- <div id="sectionTitle">
             <h1 class="blog-title">
                 {{page.title}}
             </h1>
             <hr class="hr-gradient">
-        </div>
+        </div> -->
         <!-- end section title -->
         <div class="main">
-            <div class="blog-date">
+            <!-- <div class="blog-date">
                 <span class="date-month">
                   {{page.date | date:"%B"}}
                 </span>
                 <span class="date-year">
                   {{page.date | date:"%Y"}}
                 </span>
-            </div>
+            </div> -->
             <!-- end blog date -->
             <div class="blog-content">
-                {{ content }}
+              <ul class="post-list">
+                <li>
+                  <h2>
+                    <a class="post-link"href="#">{{page.title}}</a>
+                  </h2>
+                  <div class="blog-post">
+                    {{ content }}
+                  </div>
+                </li>
+              </ul>
             </div>
         </div>
         <!-- /end .main -->
