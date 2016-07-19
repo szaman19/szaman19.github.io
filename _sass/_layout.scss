@@ -56,6 +56,7 @@
                   a{
                     text-decoration: none;
                     font-family: $blog-font-stack;
+                    color: #333;
 
                     &:visited{
                       color: #333;
@@ -64,13 +65,15 @@
                   }
                 }
                 p{
-                  width: 95%;
+                  width: 90%;
                   font-size: $mobile-page-font-height;
                   margin: auto;
                   margin-bottom: .4em;
                   font-family: $blog-font-stack;
                 }
                 blockquote{
+                  // display: block;
+                  // width: 100%;
                   margin-top: 0px;
                   margin-bottom: 0px;
                   margin-right: 1em;
@@ -86,6 +89,15 @@
                   border-top: 0px;
                   border-bottom-width:  0px;
                   float: right;
+                  &.post-time{
+                    display: block;
+                    float: none;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    margin-bottom: .3em;
+                    margin-left: 1em;
+
+                  }
                   span{
                     font-size: 90%;
 
