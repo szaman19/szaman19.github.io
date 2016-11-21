@@ -28,11 +28,11 @@
     </title>
     <link rel="stylesheet" href="
     {% if page.layout == 'post'%}
-    {{" /css/styles.css" | prepend: site.baseurl}}
+    {{"css/styles.css" | prepend: site.baseurl}}
     {% else if page.title =='project' %}
-    {{"/css/styles.css" | prepend:site.baseurl}}
+    {{"css/styles.css" | prepend:site.baseurl}}
     {% else if page.title =='home' %}
-    {{"/css/styles.css" | prepend:site.baseurl}}
+    {{"css/styles.css" | prepend:site.baseurl}}
     {% endif %}">
 </head>
 <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
