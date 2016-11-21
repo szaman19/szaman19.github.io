@@ -16,31 +16,23 @@ title: Home
           {% for post in site.posts %}
             <li>
               <div class="blog-post">
-
-
                 <h2>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                 </h2>
                 <blockquote cite="http://">
                     <span class="post-meta ">{{ post.date | date: "%b , %Y" }}</span>
                 </blockquote>
-
-
                   {{ post.excerpt}}
                   <!-- <blockquote cite="http://">
                       <span class="post-meta ">{{ post.date | date: "%b , %Y" }}</span>
                   </blockquote> -->
-
               </div>
             </li>
             <!-- <hr> -->
           {% endfor %}
         </ul>
         <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
       </div>
-
     </div>
-
   </div>
 </div>

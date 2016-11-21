@@ -26,9 +26,6 @@ img,
         overflow-x: visible;
         background-color:white;
         box-shadow: 0em .5em .4em #333;
-
-
-
       }
       .blog .main{
         float: left;
@@ -140,20 +137,17 @@ img,
     }
 
     ul.post-list>li:hover{
-      background-color: gray;
-      color: white;
-
+      /*background-color: gray;
+      color: white;*/
     }
     ul.post-list>li:hover>div.blog-post>h2{
-      color: white;
+      color: #2c2c2c;
+      text-decoration: underline;
     }
-
     ul.post-list>li>div.blog-post>span.post-meta{
       float: right;
-
       color: gray;
       font-size: .5em;
-
     }
     ul.post-list>li>div.blog-post>h2{
       padding-left: .3em;
@@ -181,5 +175,4 @@ img,
       ul.post-list>li{
         width: 100%;
       }
-
     }
