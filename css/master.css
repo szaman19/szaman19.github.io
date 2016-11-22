@@ -131,9 +131,10 @@ img,
       width: 50%;
 
     }
+    /*Post body styles*/
     ul.post-list>li>div.blog-post{
       padding-right: 2em;
-      padding-left: 2em;
+      padding-left: 1em;
     }
 
     ul.post-list>li:hover{
@@ -175,4 +176,10 @@ img,
       ul.post-list>li{
         width: 100%;
       }
+      /*Post body styles*/
+      ul.post-list>li>div.blog-post{
+        padding-right: 2em;
+        padding-left: 1em;
+      }
+
     }
