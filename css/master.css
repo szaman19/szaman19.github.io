@@ -160,6 +160,12 @@ img,
     /* Smartphones (portrait and landscape) ----------- */
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
       /* Styles */
+      html, body {
+        /*Stop horrizontal scrolling in mobile*/
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
       #page {
         width: 100%;
         margin: 0px auto 36px;
@@ -172,6 +178,9 @@ img,
         padding-top: 0em;
         padding-left: 0em;
         padding-right: 0em;
+      }
+      ul.post-list{
+        width: 100%;
       }
       ul.post-list>li{
         width: 100%;
