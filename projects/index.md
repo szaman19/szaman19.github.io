@@ -11,6 +11,33 @@ title: Project
                     <li>
                         <div class="blog-post">
                             <h2>
+                                <a class="post-link" href="">Im_merse</a>
+                            </h2>
+                            <p>Immersive video player with leap motion.</p>
+
+                            <p>A <a href=""> Minority Report -esque </a> video player that lets you pause, play, mute, speed up, slow down playback and control volume using just hand and finger gestures! </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="blog-post">
+                            <h2>
+                                <a class="post-link" href="">Buzzfood</a>
+                            </h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="blog-post">
+                            <h2>
+                                <a class="post-link" href="">Bose Leap Motion Controller</a>
+                            </h2>
+                            <p>
+
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="blog-post">
+                            <h2>
                                 <a class="post-link" href="">Project 1</a>
                             </h2>
                         </div>
