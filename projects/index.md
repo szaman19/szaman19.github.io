@@ -38,7 +38,14 @@ title: Project
                     <li>
                         <div class="blog-post">
                             <h2>
-                                <a class="post-link" href="">Project 1</a>
+                                <a class="post-link" href="">Assembly Simulator</a>
+                            </h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="blog-post">
+                            <h2>
+                                <a class="post-link" href="">Six Minute States</a>
                             </h2>
                         </div>
                     </li>
