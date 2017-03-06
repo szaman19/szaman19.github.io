@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Project
+title: Projects
 ---
 
 <div id="page">

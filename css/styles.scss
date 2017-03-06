@@ -9,9 +9,10 @@ $blog-font-stack: Lora,serif;
 $body-font-color: #2c2c2c;
 $body-font-size: 100%;
 $body-height: 100%;
-
+$zero: 0px;
 $on-mobile: 320px;
 $on-small-device: 720px;
+$on-desktop: 1800px;
 
 $mobile-page-width: 100%;
 $mobile-page-height: 100%;
@@ -20,7 +21,9 @@ $mobile-page-font-height: 80%;
 $sm-page-width: 100%;
 $sm-page-height: 100%;
 
-
+$desktop-page-width: 75%;
+$desktop-page-height: 100%;
+$desktop-page-font-height:100;
 $full-page-width: 100%;
 $full-page-height: 100%;
 $full-page-margin: 0px auto 36px;
@@ -36,6 +39,11 @@ $link-decoration-disabled: none;
     @media screen and (max-width: $device) {
         @content;
     }
+}
+@mixin media-query($min, $max){
+  @media screen and (min-width:$min) and (max-width: $max){
+    @content;
+  }
 }
 
 @mixin link($link, $visit, $hover, $active){
@@ -70,15 +78,14 @@ $link-decoration-disabled: none;
     background-color: white;
     .nav-bar{
       width: 100%;
-      ul{
+      ul.nav{
         list-style-type: none;
         display: flex;
-
         justify-content: flex-end;
         margin-bottom: 0;
 
 
-        li{
+        li.tabs{
           padding-top: .7em;
           padding-bottom: .7em;
           padding-left: .7em;
@@ -96,7 +103,6 @@ $link-decoration-disabled: none;
             border-color: red;
 
           }
-
           &:hover{
             a{
               text-decoration: underline;
