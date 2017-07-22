@@ -3,6 +3,7 @@ layout: post
 title:  "Hello World"
 date:   2016-05-31 05:32:56 -0400
 excerpt_separator: <!--more-->
+article: "hellow-world"
 ---
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when

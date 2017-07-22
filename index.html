@@ -78,10 +78,21 @@ layout: default
 								<h3>(Nothing up yet. This is just some dummy text but I will get working on it soon!)</h3>
 								<hr>
 								{% for post in site.posts %}
-								<h4 class="major">{{ post.title }}</h3>
+
+								<a href="#{{post.article}}">
+										<h4 class="major">{{ post.title }}</h3>
+								</a>
 								<p>{{post.excerpt}}</p>
 								<h5>{{ post.date | date: "%b , %Y" }}</h5>
 								<hr>
 								{% endfor %}
 							</article>
+
+							{% for post in site.posts %}
+							<article id="{{post.article}}">
+								<a href="#blog">&larr; back to blog</a>
+								<h2 class="major">{{post.title}}</h2>
+								{{post.content}}
+							</article>
+							{% endfor %}
 					</div>
