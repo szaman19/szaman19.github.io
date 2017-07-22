@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
+
   {% include head.html %}
+
   <body>
-    {% include nav.html %}
-    {{content}}
+
+
+
+    <!-- <div class="page-content"> -->
+      <div id="wrapper">
+        {% include header.html %}
+        {{ content }}
+      <!-- </div> -->
+      {% include footer.html %}
+    </div>
+    <div id="bg"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+
   </body>
+
 </html>

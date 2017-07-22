@@ -1,37 +1,15 @@
 ---
 layout: default
 ---
-<div id="page">
-    <div class="blog section">
-        <div class="main">
-            <!-- <div class="blog-date">
-                <span class="date-month">
-                  {{page.date | date:"%B"}}
-                </span>
-                <span class="date-year">
-                  {{page.date | date:"%Y"}}
-                </span>
-            </div> -->
-            <!-- end blog date -->
-            <div class="blog-content">
-              <ul class="post-list">
-                <li>
-                  <div class="blog-post">
-                    <h2>
-                      <a class="post-link"href="#">{{page.title}}</a>
-                    </h2>
-                    <blockquote class="post-time" cite="http://">
-                        <span class="post-meta ">{{ page.date | date: "%b , %Y" }}</span>
-                    </blockquote>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-                    {{ content }}
-                  </div>
-                </li>
-              </ul>
-            </div>
-        </div>
-        <!-- /end .main -->
-    </div>
-    <!-- /end .blog .section -->
-</div>
-<!-- /end #page -->
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
