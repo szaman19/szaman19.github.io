@@ -16,6 +16,7 @@ twitter_username: Shehtab
 github_username:  szaman19
 sass:
     sass_dir: _sass
-
+gems:
+  - jekyll-sitemap
 # Build settings
 markdown: kramdown
