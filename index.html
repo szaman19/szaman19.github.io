@@ -9,23 +9,38 @@ layout: default
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<p>Born in Dhaka, Bangladesh and currently living in NYC and loving it. </p>
+								<p>Study CS and Physics at Binghamton University. Current passions include
+								reading about BCS theory, NodeJS/ Web Development, LaTeX,and FM17.
+									Please take a look at the <a href="#work">projects</a> or read
+									my <a href="#blog">blog</a>and
+									 <a href="#contact">contact me</a> if you need
+										get into contact with me.
+								</p>
+
+								<p class="copyright">The website is designed by
+									<a href="https://html5up.net">HTML5 UP</a> and modified for Jekyll.</p>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Projects</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<h4>
+										<a class="post-link" href="">Im_merse</a>
+								</h4>
+								<p>An immersive video player created with LeapMotion. <br/>
+								A <a href=""> Minority Report-esque </a> video player that lets you pause, play, mute, speed up, slow down playback and control volume using just hand and finger gestures! </p>
+								<hr>
 							</article>
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<p>Hi! I'm still working on the site and will have a proper about me
+								up soon. If you would like a copy of my resume please fill out the contact
+							with the word resume and it will get sent to your email!</p>
 							</article>
 
 						<!-- Contact -->
@@ -59,8 +74,11 @@ layout: default
 
 							<article id="blog">
 								<h2 class="major">Blog</h2>
+								<h3>(Nothing up yet. This is just some dummy text but I will get working on it soon!)</h3>
+								<hr>
 								{% for post in site.posts %}
-								<h3 class="major">{{ post.title }}</h3>
+								<h4 class="major">{{ post.title }}</h3>
+								<p>{{post.excerpt}}</p>
 								<h5>{{ post.date | date: "%b , %Y" }}</h5>
 								<hr>
 								{% endfor %}
