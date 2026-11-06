@@ -7,7 +7,6 @@
 
 # Site settings
 title: SZ-Site
-email: shehtabzaman@gmail.com
 description: My personal website.
 author: Shehtab Zaman
 baseurl: "" # the subpath of your site, e.g. /blog

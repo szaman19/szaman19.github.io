@@ -14,6 +14,7 @@ for (const file of files.filter(file => file.endsWith('.html'))) {
   const html = await readFile(file, 'utf8');
   assert(html.includes('<html lang="en">'), `Missing language: ${file}`);
   assert(!html.includes('<script'), `Unexpected client JavaScript: ${file}`);
+  assert(!/mailto:|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i.test(html), `Public email address: ${file}`);
   assert(!/\{\{|\{%/.test(html), `Unrendered template: ${file}`);
   for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
     const url = match[1];
@@ -34,6 +35,6 @@ for (const file of files.filter(file => file.endsWith('.html'))) {
     checked++;
   }
 }
-assert(files.includes(path.join(root, 'CV-Updated.pdf')), 'Missing CV');
+assert(!files.some(file => file.endsWith('.pdf')), 'CVs with private contact details must not be published');
 assert(files.includes(path.join(root, 'feed.xml')), 'Missing feed');
 console.log(`Checked ${files.filter(file => file.endsWith('.html')).length} HTML pages and ${checked} local links.`);

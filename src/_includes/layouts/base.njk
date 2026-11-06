@@ -21,13 +21,13 @@
     <nav aria-label="Main navigation">
       <a href="/#work">Work</a>
       {% if collections.posts.length %}<a href="/writing/"{% if '/writing/' in page.url %} aria-current="page"{% endif %}>Writing</a>{% endif %}
-      <a href="/CV-Updated.pdf">CV</a>
+      <a href="{{ site.linkedin }}">Contact</a>
     </nav>
   </header>
   <main id="main">{{ content | safe }}</main>
   <footer class="site-footer">
     <span>Shehtab Zaman · New York</span>
-    <a href="mailto:{{ site.email }}">Email</a>
+    <a href="{{ site.linkedin }}">LinkedIn</a>
     <a href="{{ site.github }}">GitHub</a>
     {% if collections.posts.length %}<a href="/feed.xml">RSS / Atom</a>{% endif %}
   </footer>

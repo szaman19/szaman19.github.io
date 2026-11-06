@@ -45,7 +45,7 @@ Images can go in `src/styles/` (which is copied to the output), or add a dedicat
 - Profile links and metadata: `src/_data/site.json`.
 - Series descriptions: `src/_data/writingSeries.json`.
 - Appearance: `src/styles/site.css`.
-- CV: replace `CV-Updated.pdf` in the repository root.
+- Contact: LinkedIn is used instead of a public email address. Local CV files (`CV-Updated.pdf` and `assets/Resume.pdf`) are ignored and are not published because they contain personal contact details.
 
 ## GitHub Pages
 
