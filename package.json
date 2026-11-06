@@ -1,0 +1,12 @@
+{
+  "name": "shehtab-zaman-website",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check-site.mjs"
+  },
+  "devDependencies": { "@11ty/eleventy": "3.1.2" }
+}

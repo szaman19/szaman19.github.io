@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Writing
+description: Notes and essays on distributed deep learning, AI for science, and agentic harnesses for science, by Shehtab Zaman.
+---
+<div class="page-intro">
+  <h1>Writing</h1>
+  <p>Notes and essays on building AI systems for scientific work. Organized into ongoing series, with room to follow an idea over several posts.</p>
+</div>
+{% for item in writingSeries %}
+{% set posts = collections.posts | inSeries(item.id) %}
+{% if posts.length %}
+<section aria-labelledby="{{ item.id }}">
+  <h2 id="{{ item.id }}"><a href="/writing/{{ item.id }}/">{{ item.title }}</a></h2>
+  <p>{{ item.description }}</p>
+  {% include "post-list.njk" %}
+</section>
+{% endif %}
+{% endfor %}
+{% set posts = collections.posts | inSeries('') %}
+{% if posts.length %}<section><h2>Other notes</h2>{% include "post-list.njk" %}</section>{% endif %}
+{% if collections.posts.length %}<p class="meta">Follow new posts with <a href="/feed.xml">RSS / Atom</a>.</p>{% endif %}

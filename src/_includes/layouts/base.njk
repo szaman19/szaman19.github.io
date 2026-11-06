@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{% if title %}{{ title }} · {% endif %}{{ site.name }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
+  <link rel="stylesheet" href="/styles/site.css">
+  {% if collections.posts.length %}<link rel="alternate" type="application/atom+xml" title="{{ site.name }} — Writing" href="/feed.xml">{% endif %}
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="site-name" href="/"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ site.name }}</a>
+    <nav aria-label="Main navigation">
+      <a href="/#work">Work</a>
+      {% if collections.posts.length %}<a href="/writing/"{% if '/writing/' in page.url %} aria-current="page"{% endif %}>Writing</a>{% endif %}
+      <a href="/CV-Updated.pdf">CV</a>
+    </nav>
+  </header>
+  <main id="main">{{ content | safe }}</main>
+  <footer class="site-footer">
+    <span>Shehtab Zaman · New York</span>
+    <a href="mailto:{{ site.email }}">Email</a>
+    <a href="{{ site.github }}">GitHub</a>
+    {% if collections.posts.length %}<a href="/feed.xml">RSS / Atom</a>{% endif %}
+  </footer>
+</body>
+</html>

@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: writingSeries
+  size: 1
+  alias: currentSeries
+permalink: "/writing/{{ currentSeries.id }}/index.html"
+eleventyComputed:
+  title: "{{ currentSeries.title }}"
+  description: "{{ currentSeries.description }}"
+---
+<p class="breadcrumb"><a href="/writing/">← All writing</a></p>
+<div class="page-intro">
+  <p class="meta">An ongoing series</p>
+  <h1>{{ currentSeries.title }}</h1>
+  <p>{{ currentSeries.description }}</p>
+</div>
+{% set posts = collections.posts | inSeries(currentSeries.id) %}
+{% include "post-list.njk" %}

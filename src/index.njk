@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+---
+<section class="intro" aria-labelledby="intro-title">
+  <p class="subtitle">AI systems for scientific discovery.</p>
+  <p>I’m a research scientist working at the intersection of machine learning, scientific computing, and the physical sciences. I build models and systems that help us understand the world, from molecules and materials to medicine.</p>
+  <p>Currently, I’m a Research Fellow in Medical Physics at <strong>Memorial Sloan Kettering Cancer Center</strong>, developing patient-specific digital twins and world models for cancer radiotherapy with multi-modal data.</p>
+  <p>Before that, I worked on distributed deep learning and scientific machine learning at Binghamton University, with research appointments at Lawrence Livermore National Laboratory. My background is in the intersection of computer science, physics, and mathematics.</p>
+  <p class="link-list"><a href="mailto:{{ site.email }}">Email</a> <a href="{{ site.scholar }}">Google Scholar</a> <a href="{{ site.github }}">GitHub</a> <a href="{{ site.linkedin }}">LinkedIn</a> <a href="/CV-Updated.pdf">CV (PDF)</a></p>
+</section>
+
+<section id="work" aria-labelledby="work-title">
+  <h2 id="work-title">Selected work</h2>
+  <p>My work spans the models, tools, and computing infrastructure needed to put AI to use in science.</p>
+  <dl class="work-list">
+    <dt><a href="https://github.com/Dynamis-MD/Dynamis">Dynamis</a></dt>
+    <dd>A distributed molecular dynamics simulator I co-created for neural network potentials. Built on PyTorch with custom CUDA kernels for graph construction, spatial partitioning, and communication across GPUs, enabling large-scale molecular simulations.</dd>
+    <dt>Charge</dt>
+    <dd>A multi-agent chemical reasoning framework I created for molecule optimization, reaction prediction, and scientific tool use. In active use at LLNL, with support for hosted and local models and automatic MCP server generation.</dd>
+    <dt><a href="https://github.com/lbann/dgraph">DGraph</a></dt>
+    <dd>Distributed graph neural networks for large scientific datasets. Built with NCCL, MPI, and NVSHMEM, including GPU-initiated communication and full-graph training on graphs with billions of vertices.</dd>
+    <dt><a href="https://github.com/particlegrid/particlegrid">ParticleGrid</a></dt>
+    <dd>A high-performance C++ library for 3D molecular and crystal representations, with SIMD acceleration and zero-copy integration with Python machine learning frameworks. Built with TotalEnergies.</dd>
+  </dl>
+</section>
+
+<section aria-labelledby="research-title">
+  <h2 id="research-title">Selected research</h2>
+  <ul class="publication-list">
+    <li><span class="publication-title">BOOM: Benchmarking Out-of-distribution Molecular Property Prediction</span><br><span class="meta">Co-first author · NeurIPS, Datasets &amp; Benchmarks · 2025</span></li>
+    <li><span class="publication-title">Score-based Idempotent Distillation of Diffusion Models</span><br><span class="meta">SPIGM Workshop, NeurIPS · 2025</span></li>
+    <li><span class="publication-title">STRIDE: Structure-guided Generation for Inverse Design of Molecules</span><br><span class="meta">AI4Science Workshop, NeurIPS · 2023</span></li>
+    <li><span class="publication-title">Parallelizing Graph Neural Networks via Matrix Compaction</span><br><span class="meta">IEEE CCGrid · 2022</span></li>
+  </ul>
+  <p><a href="{{ site.scholar }}">All publications on Google Scholar →</a></p>
+</section>
+
+{% if collections.posts.length %}
+<section aria-labelledby="writing-title">
+  <h2 id="writing-title">Writing</h2>
+  <p>Notes and essays, organized into ongoing series.</p>
+  <ul class="series-list">
+    {% for item in writingSeries %}
+    {% set seriesPosts = collections.posts | inSeries(item.id) %}
+    {% if seriesPosts.length %}
+    <li><a href="/writing/{{ item.id }}/">{{ item.title }}</a><p>{{ item.description }}</p></li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+  <p><a href="/writing/">Browse writing →</a></p>
+</section>
+{% endif %}
+
+<section aria-labelledby="contact-title">
+  <h2 id="contact-title">Get in touch</h2>
+  <p>I’m interested in research and engineering opportunities, and collaborations on scientific AI, distributed learning, and agents for science. Reach me at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+</section>

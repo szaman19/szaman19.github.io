@@ -1,0 +1,17 @@
+[
+  {
+    "id": "distributed-deep-learning",
+    "title": "Distributed deep learning",
+    "description": "Notes on training across GPUs: communication, kernels, and the systems underneath large models."
+  },
+  {
+    "id": "ai-for-science",
+    "title": "AI for science",
+    "description": "Models and methods for discovery across medicine, chemistry, and materials."
+  },
+  {
+    "id": "agentic-harnesses-for-science",
+    "title": "Agentic harnesses for science",
+    "description": "Tools, evaluation, and infrastructure for agents that do scientific work."
+  }
+]

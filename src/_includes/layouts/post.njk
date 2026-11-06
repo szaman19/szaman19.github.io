@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+---
+<article>
+  <header class="post-header">
+    <p class="breadcrumb"><a href="/writing/">← All writing</a>{% for item in writingSeries %}{% if item.id == series %} · <a href="/writing/{{ item.id }}/">{{ item.title }}</a>{% endif %}{% endfor %}</p>
+    <h1>{{ title }}</h1>
+    <p class="meta"><time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time> · {{ site.name }}{% if series %} · <a href="/writing/{{ series }}/">Series archive</a>{% endif %}</p>
+  </header>
+  <div class="post-body">{{ content | safe }}</div>
+  {% if series %}
+  <aside class="post-end" aria-label="More in this series">
+    <h2>More in this series</h2>
+    {% set posts = collections.posts | inSeries(series) %}
+    {% include "post-list.njk" %}
+  </aside>
+  {% endif %}
+</article>
